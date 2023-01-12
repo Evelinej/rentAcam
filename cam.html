@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meine Cam</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <header class="flex">
+
+        <div class="container-header">
+
+        </div>
+
+        <div class="container-header">
+
+        </div>
+
+        <nav class="container-header">
+
+            <a href="../">
+
+                <button id="neueCam"> Alle Cams</button>
+
+            </a>
+
+            <button id="logout" onclick="logout()"> Logout </button>
+
+        </nav>
+
+    </header>
+    <h1>Meine Cam</h1>
+    <p id="infoText"> </p>
+
+    <div class="container">
+        <div class="login">
+            <div id="meineCam">
+
+                <label for="titel">Titel</label> <br>
+                <input id="titel" type="text" value=""> <br>
+
+                <label for="bild">Bild URL</label> <br>
+                <input id="bild" type="text" value=""> <br>
+                <img id="bild-vorschau" width="300px" src="" alt=""> <br>
+
+                <br> <br>
+
+                <label for="beschreibung">Beschreibung</label> <br>
+                <textarea id="beschreibung" name="beschreibung"> </textarea> <br> <br>
+
+                <label for="stadt">Nächste Stadt</label> <br>
+                <select class="dropdown" name="stadt" id="stadt">
+                    <option value="2">Luzern</option>
+                    <option value="1">Zürich</option>
+                </select> <br> <br>
+
+
+            </div>
+
+            <p>Status</p>
+            <input type="radio" id="status-frei" name="status" value="1">
+            <label for="status-frei">Verfügbar</label><br>
+
+            <input type="radio" id="status-besetzt" name="status" value="0">
+            <label for="status-besetzt">Nicht Verfügbar</label><br>
+
+            <button class="hidden" id="button-neue" onclick="neueCam()">Veröffentlichen</button>
+            <button class="hidden" id="button-aktualisieren" onclick="aktualisiereCam()">Aktualisieren</button>
+            <button class="hidden" id="button-loeschen" onclick="loescheCam()">Löschen</button>
+
+            <p id="nachricht"> </p>
+
+        </div>
+    </div>
+    </div>
+
+    <script src="js/cam.js"></script>
+
+</body>
+
+</html>
