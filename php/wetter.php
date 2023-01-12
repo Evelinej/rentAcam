@@ -1,5 +1,5 @@
 <?php
-$apiKey = "6992510b03b79f45aaa6a464a89af35b";
+$apiKey = "API KEY";
 $cityId = "2657896";
 $googleApiUrl = "https://api.openweathermap.org/data/2.5/weather?id=" . $cityId . "&lang=en&units=metric&APPID=" . $apiKey;
 
